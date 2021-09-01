@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    ul,
+    ol {
+      list-style: none;
+    }
+    ul > li {
+      float: left;
+
+      padding: 4px 0.5em;
+      line-height: 32px;
+    }
+    ul {
+      display: inline-block;
+    }
+    img {
+      max-width: 100%;
+    }
+    .logo > img {
+      height: 26px;
+      vertical-align: middle;
+    }
+    .logo {
+      float: left;
+      display: inline-block;
+      margin-top: 8px;
+      margin-left: 10px;
+    }
+    .nav {
+      float: right;
+      margin-left: 30px;
+    }
+    header {
+      border: 1px solid rgb(255, 255, 255);
+      background: rgb(167, 167, 167);
+      color: white;
+    }
+    .content {
+      outline: 1px solid red;
+      width: 800px;
+      margin: 0 auto;
+    }
+    .content > aside {
+      width: 200px;
+      background: lightblue;
+      height: 400px;
+      float: left;
+    }
+    .content > main {
+      width: 300px;
+      background: lemonchiffon;
+      height: 400px;
+      float: left;
+    }
+    .content > .ad {
+      width: 300px;
+      background: lightgreen;
+      height: 400px;
+      float: left;
+    }
+    .imageList {
+      outline: 1px solid red;
+      width: 800px;
+      margin: 0 auto;
+      background: lightgrey;
+    }
+    .imageList > .x > .image {
+      width: 191px;
+      height: 191px;
+      background: lightseagreen;
+      float: left;
+      margin: 10px 12px 0px 0;
+    }
+    .imageList > .x {
+      margin-right: -12px;
+    }
+  </style>
+  <body>
+    <header class="clearfix">
+      <div class="logo"><img src="logo.png" alt="写代码啦" /></div>
+      <ul class="clearfix nav">
+        <li>首页</li>
+        <li>课程</li>
+        <li>优惠</li>
+        <li>关于</li>
+      </ul>
+    </header>
+
+    <div class="content clearfix">
+      <aside>一行有6个字</aside>
+      <main></main>
+      <div class="ad"></div>
+    </div>
+    <div class="imageList">
+      <div class="x clearfix">
+        <div class="image">1111111</div>
+        <div class="image">2222222</div>
+        <div class="image">3333333</div>
+        <div class="image">4444444</div>
+        <div class="image">1111111</div>
+        <div class="image">2222222</div>
+        <div class="image">3333333</div>
+        <div class="image">4444444</div>
+      </div>
+    </div>
+  </body>
+</html>
