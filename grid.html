@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid布局</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 40px 50px auto 50px 40px;
+      grid-template-rows: 60px 300px 100px;
+      border: 1px solid red;
+    }
+    .a,
+    .b,
+    .d,
+    .c {
+      border: 1px solid red;
+    }
+    .a {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+    .b {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .c {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    .d {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 4;
+      grid-column-end: 6;
+    }
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      border: 1px solid green;
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-gap: 11.5px;
+    }
+    .aa,
+    .bb,
+    .cc,
+    .dd,
+    .ee,
+    .ff,
+    .gg,
+    .hh {
+      width: 191px;
+      height: 191px;
+
+      background: grey;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="e"></div>
+      <div class="d"></div>
+    </div>
+    <div class="container2">
+      <div class="aa"></div>
+      <div class="bb"></div>
+      <div class="cc"></div>
+      <div class="dd"></div>
+      <div class="ee"></div>
+      <div class="ff"></div>
+      <div class="gg"></div>
+      <div class="hh"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .logo {
+      background: grey;
+      margin-left: 5px;
+    }
+
+    .logo > img {
+      height: 26px;
+      vertical-align: middle;
+    }
+
+    ul {
+      display: flex;
+      border: 1px solid green;
+    }
+
+    ul > li {
+      border: 1px solid red;
+      line-height: 32px;
+      padding: 0 5px;
+    }
+
+    header {
+      display: flex;
+      border: 1px solid green;
+      justify-content: space-between;
+      align-items: center;
+      background: darkgrey;
+    }
+
+    .content {
+      display: flex;
+      background: rgb(148, 148, 238);
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    aside {
+      width: 200px;
+      border: 1px solid red;
+      background: blue;
+      height: 400px;
+    }
+
+    main {
+      order: 1px solid red;
+      background: rgb(50, 50, 82);
+      height: 400px;
+      flex-grow: 1;
+    }
+
+    .ad {
+      width: 200px;
+      order: 1px solid red;
+      background: rgb(161, 33, 119);
+      height: 400px;
+    }
+    .imageList {
+      margin: 0px auto;
+      order: 1px solid red;
+      width: 800px;
+    }
+    .imageList > .x > .image {
+      width: 191px;
+      height: 191px;
+      order: 1px solid red;
+      background: chartreuse;
+      margin-right: 12px;
+      margin-top: 12px;
+    }
+    .imageList > .x {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -12px;
+    }
+  </style>
+
+  <body>
+    <header class="">
+      <div class="logo"><img src="logo.png" alt="写代码啦" /></div>
+      <ul class="clearfix nav">
+        <li>首页</li>
+        <li>课程</li>
+        <li>优惠</li>
+        <li>关于</li>
+      </ul>
+    </header>
+    <div class="content">
+      <aside></aside>
+      <main></main>
+      <div class="ad"></div>
+    </div>
+    <div class="imageList">
+      <div class="x">
+        <div class="image">img</div>
+        <div class="image">img</div>
+        <div class="image">img</div>
+        <div class="image">img</div>
+        <div class="image">img</div>
+        <div class="image">img</div>
+        <div class="image">img</div>
+      </div>
+    </div>
+  </body>
+</html>
